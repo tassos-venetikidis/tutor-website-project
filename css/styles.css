@@ -63,6 +63,46 @@ img {
   border-color: #fff;
 }
 
+.section {
+  margin: 4rem 0;
+}
+
+.section-header {
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+}
+
+.heading-border {
+  width: 64px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 0 auto 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.75rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
 /* NAVBAR */
 .navbar {
   background-color: transparent;
@@ -77,7 +117,7 @@ img {
 }
 
 .navbar.navbar-scroll {
-  background-color: rgba(235, 77, 85, 0.7);
+  background-color: rgba(235, 77, 85, 0.8);
   backdrop-filter: blur(10px);
 }
 
@@ -192,6 +232,46 @@ img {
   height: 100px;
 }
 
+/* LEARN SECTION -> TOPICS */
+.topics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.topic img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.topic img:hover {
+  transform: scale(1.1);
+}
+
+.topic h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+/* COURSE CHAPTER SECTION -> CHAPTER CARDS */
+.chapter-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem 0 4rem;
+}
+
+.chapter-cards img {
+  width: 130px;
+  margin-top: 1rem;
+}
+
+.chapter-cards h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1200px) {
   /* HERO SECTION */
@@ -206,6 +286,11 @@ img {
   .hero img {
     max-width: 500px;
     margin-right: 0;
+  }
+
+  /* LEARN SECTION -> TOPICS */
+  .topics {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (max-width: 992px) {
@@ -228,7 +313,18 @@ img {
     max-width: 600px;
     margin-top: 2rem;
   }
+
+  /* LEARN SECTION -> TOPICS */
+  .topics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* COURSE CHAPTER SECTION -> CHAPTER CARDS */
+  .chapter-cards {
+    grid-template-columns: 1fr;
+  }
 }
+
 @media only screen and (max-width: 768px) {
   /* NAVBAR */
   .main-menu-items {
@@ -256,5 +352,10 @@ img {
 
   .hero img {
     max-width: 350px;
+  }
+
+  /* LEARN SECTION -> TOPICS */
+  .topics {
+    grid-template-columns: 1fr;
   }
 }
