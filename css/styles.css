@@ -302,6 +302,48 @@ img {
   border-bottom: none;
 }
 
+/* INFO SECTION */
+.info-container {
+  background-image: url("../images/audience.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 15%;
+  display: flex;
+}
+
+.info-left {
+  width: 50%;
+}
+
+.info-content {
+  background-color: var(--primary-color);
+  color: #fff;
+  flex: 1;
+  /* width: 50%; */
+  padding: 4rem;
+}
+
+.info-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.info-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.info-content ul li {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.info-content i {
+  margin-right: 0.5rem;
+  color: var(--secondary-color);
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1200px) {
   /* HERO SECTION */
@@ -353,6 +395,11 @@ img {
   .chapter-cards {
     grid-template-columns: 1fr;
   }
+
+  /* INFO SECTION */
+  .info-container {
+    background-position-x: 20%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -368,6 +415,27 @@ img {
   .navbar .mobile-menu-toggle {
     display: block;
     padding: 10px;
+  }
+
+  /* INFO SECTION */
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-content {
+    padding: 2rem;
+  }
+
+  .info-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-content p {
+    font-size: 1rem;
+  }
+
+  .info-left {
+    display: none;
   }
 }
 @media only screen and (max-width: 576px) {
