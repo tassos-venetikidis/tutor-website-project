@@ -46,6 +46,14 @@ img {
   padding: 0 2rem;
 }
 
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
 .btn {
   display: inline-block;
   padding: 1.3rem 2.3rem;
@@ -344,6 +352,24 @@ img {
   margin-right: 0.5rem;
   color: var(--secondary-color);
 }
+
+/* TAKEAWAYS SECTION */
+.takeaways-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+.takeaways-cards .card {
+  flex-direction: row;
+  text-align: left;
+}
+
+.takeaways-cards .card i {
+  margin-right: 1rem;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1200px) {
   /* HERO SECTION */
@@ -399,6 +425,11 @@ img {
   /* INFO SECTION */
   .info-container {
     background-position-x: 20%;
+  }
+
+  /* TAKEAWAYS SECTION */
+  .takeaways-cards {
+    grid-template-columns: 1fr;
   }
 }
 
