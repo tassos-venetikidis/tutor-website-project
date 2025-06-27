@@ -32,6 +32,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  font: inherit;
+}
+
 /* UTILITY CLASSES */
 
 .container {
